@@ -4,7 +4,7 @@ A encyclopedia for DSA prep for placements
 Welcome 🙌! This encyclopedia encourages daily contributions from anyone intending to learn Data Structures and Algorithms consistently, and helping their peers for placements! 
 
 ## 📝What you can Contribute? 
-You can contribute everything DSA related on here.Make your own sub-folder with your name in this repository, make a readme file (optionally) introducing yourself and just keep pushing in DSA problems to keep up the consistency with your fellow repo peers.
+You can contribute everything DSA related on here.You can complete the sheet problems, or push problem topic wise or make your own sub-folder with your name in this repository and just keep pushing in DSA problems you solve to keep up the consistency with your fellow repo peers.
 
 
 ## 🙌Steps-to-Contribute
