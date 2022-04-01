@@ -1,4 +1,6 @@
 #binary search after determining the the element in which the target lies
+#another better meathod where we binary search the whole array
+#like the last element would be m*n-1
 def searchMatrix(self, mat: List[List[int]], target: int) -> bool:
     N = len(mat)
     M = len(mat[0])
