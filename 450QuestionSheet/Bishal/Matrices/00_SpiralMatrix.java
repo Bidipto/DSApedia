@@ -5,7 +5,7 @@ class Solution
 
   
     //Function to return a list of integers denoting spiral traversal of matrix.
-    static ArrayList<Integer> spirallyTraverse(int arr[][], int r, int c)
+    static ArrayList<Integer> spirallyTraverse(int arr[][])
     {
         ArrayList<Integer> res = new ArrayList<>();
         
@@ -78,12 +78,9 @@ class Solution
                         {5, 6, 7, 8},
                         {9, 10, 11,12},
                         {13, 14, 15,16}};
-        // OK. HOW.
-
-        /*
-
-
-
-        */
+        for(int i: spirallyTraverse(arr))
+        {
+            System.out.print(i + " ");
+        }
     }
 }
