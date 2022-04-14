@@ -1,6 +1,6 @@
 package DSA450Restart.Arrays;
 
-
+#comparison function using pairs
 class Pair
     {
         long first, second;
