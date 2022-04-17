@@ -1,3 +1,6 @@
+#good logic but the algo is unstable
+#the relative order of the elements is not preserved
+
 def sort012(self,arr,N):
     one = 0
     two = 0

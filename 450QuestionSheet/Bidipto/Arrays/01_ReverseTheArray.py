@@ -6,3 +6,8 @@ def reverseWord(s):
     return "".join(res)
     
 #inplace solution using a reverse function could be used as-well
+def reverseWord(s):
+    res=[]
+    for i in range(len(s)):
+        res.append(s.pop())
+    return "".join(res)
