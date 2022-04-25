@@ -31,4 +31,34 @@ def increasingBST(self, root: TreeNode, tail = None) -> TreeNode:
 
 #iterative solution
 #basic iterative inorder with some modifications
-
+def increasingBST(self, root: TreeNode) -> TreeNode:
+        if not root: return 
+        stack = []
+        current = previous = root
+        flag = True
+         
+        while stack or current:
+            
+            while current:
+                stack.append(current)
+                current = current.left
+                
+            node = stack.pop()
+            
+            if flag:
+                newNode = node
+                previous = node
+                flag = not flag
+            else:
+                previous.right = node
+                previous.left = None
+                previous = previous.right
+            
+            # print(previous.val,previous.right.val,previous.left.val)
+            current = node.right
+        previous.right = None
+        previous.left = None
+            
+        return newNode
+#some more optimization on the iterative soln
+#we can use a dummy node and stay away from using flags

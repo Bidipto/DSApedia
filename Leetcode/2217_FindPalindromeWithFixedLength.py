@@ -1,7 +1,7 @@
 # 2217. Find Palindrome With Fixed Length
 #good observation
 #need to works on thinking about edge cases
-#just calculated the ith numbe rof half of the length of the req palindrome
+#just calculated the ith number of half of the length of the req palindrome
 #baki last meh bass copy kar diya ha
 def kthPalindrome(self, queries: List[int], L: int) -> List[int]:
     half = L//2 + L%2
