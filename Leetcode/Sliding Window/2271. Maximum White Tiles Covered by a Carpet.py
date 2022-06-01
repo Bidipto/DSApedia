@@ -14,7 +14,7 @@ def maximumWhiteTiles(self, arr: List[List[int]], L: int) -> int:
                 i,j = que.popleft()
                 temp -= (j-i+1)
                 # print(que,temp)
-            if que and que[0][0]<start:
+            if que and que[0][0]<=start:
                 res = max(res,temp-(start-que[0][0]+1))
             else:
                 res = max(res,temp)
@@ -27,7 +27,7 @@ def maximumWhiteTiles(self, arr: List[List[int]], L: int) -> int:
                 # print(que[0][1],start)
                 i,j = que.popleft()
                 temp -= (j-i+1)
-        if que and que[0][0]<start:
+        if que and que[0][0]<=start:
             # print(start,que[0][0],start-que[0][0]+1)
             res = max(res,temp-(start-que[0][0]+1))
         else:

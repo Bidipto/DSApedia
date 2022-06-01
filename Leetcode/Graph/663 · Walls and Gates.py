@@ -1,10 +1,9 @@
 # 663 · Walls and Gates
+# https://leetcode.com/problems/walls-and-gates/
+# we need to get the distance rooms to gate 
+# bfs is the first and last thought
 from collections import deque
 class Solution:
-    """
-    @param rooms: m x n 2D grid
-    @return: nothing
-    """
     def walls_and_gates(self, rooms: List[List[int]]):
         M = len(rooms)
         N = len(rooms[0])
