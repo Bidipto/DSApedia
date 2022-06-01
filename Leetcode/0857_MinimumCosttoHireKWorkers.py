@@ -8,7 +8,8 @@
 # storing the best k workers in a heap and then updating the res with the min value of possible answer every time
 
 #Edge case or a possible fault in the solution
-#what if the quality added is the max quality and the its removed from the loop in the same iteration, we still mutiply the ration of the popped element
+#what if the quality added is the max quality and the its removed from the loop in the same iteration, 
+#we still mutiply the ration of the popped element
 #this doesnt pose a problem cause the ratios are sorted, and the we would have already multiplied with a samller ratio in previous iterations
 
 
