@@ -38,3 +38,32 @@ def countPalindromicSubsequences(self, S: str) -> int:
         return dp[(start, end)]
     
     return magic(0, len(S))
+
+# Count Palindromic Subsequences(GFG)
+def countPs(self,S):
+        mod = pow(10,9) + 7
+        dp = {}
+        def magic(start, end):
+            if start == end:
+                return 1
+            
+            if start > end:
+                return 0
+            
+            #caching 
+            if (start, end) in dp:
+                return dp[(start, end)]
+            
+            count = 0
+            #when equal i,j would make a independent plaindrome
+            #or andar ka jitna ha end start aur end meh i,j dakke aur banenge 
+            if S[start] == S[end]:
+                count += 1 + magic(start+1,end-1)
+            
+            #we have substract the start+1,end-1 part to remove repeatations
+            count += magic(start+1,end) + magic(start, end-1) - magic(start+1, end-1)
+                    
+            dp[(start, end)] = count % mod
+            return dp[(start, end)]
+        
+        return magic(0,len(S)-1)

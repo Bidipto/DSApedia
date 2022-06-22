@@ -21,7 +21,7 @@ s = "acccbaaacccbaac"
 print(lps(s))
 
 #only way to pass gfg question 
-#by searching for the first cahracter and the trying 
+#by searching for the first character and the trying 
 def lpsgfg(self, s):
     firstChar = s[0]
     indexOfNextF = 0
