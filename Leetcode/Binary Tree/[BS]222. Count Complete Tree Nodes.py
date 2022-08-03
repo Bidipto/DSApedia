@@ -1,3 +1,5 @@
+#in a complete binary tree the nodes are always added in the highest depth from left to right 
+#we need to find the branch at which there is a difference between the right height and the left height  
 def countNodes(self, root: Optional[TreeNode]) -> int:
     self.count = 0
     
