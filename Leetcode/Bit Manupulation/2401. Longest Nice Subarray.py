@@ -1,4 +1,4 @@
-# doing or to keep all the significant 1s anf doing xor to remove the 1s of arr[lo]
+# doing or to keep all the significant 1s and doing xor to remove the 1s of arr[lo]
 # think about it pretty good concept 
 
 def longestNiceSubarray(self, arr: List[int]) -> int:
